@@ -46,3 +46,8 @@ w0=list(1/4 for n in range(4))
 boundss=tuple((0,1) for n in range(4))
 constrainsss={'type':'eq','fun': lambda weight:np.sum(weight)-1}
 result=minimize(sharp_ratio_calculate,x0=w0,bounds=boundss,constraints=constrainsss)
+
+
+
+
+##### we have change a lot
