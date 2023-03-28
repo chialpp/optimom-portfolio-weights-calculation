@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import quandl
+#import quandl
 from scipy.optimize import minimize
 
 
@@ -78,7 +78,7 @@ w0=list(1/4 for n in range(4))
 boundss=tuple((0,1) for n in range(4))
 constrainsss={'type':'eq','fun': lambda weight:np.sum(weight)-1}
 minimize(sharp_ratio_calculate,x0=w0,bounds=boundss,constraints=constrainsss)
-
+plt.show()
 
 
 
